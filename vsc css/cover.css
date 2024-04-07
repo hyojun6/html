@@ -1,0 +1,6 @@
+body {
+    background-image:url("/Users/yanghyojun/Downloads/고양이배경사진.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
