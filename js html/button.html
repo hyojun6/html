@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript 연습</title>
+	<style>
+	#msg {
+	border: 2px solid royalblue;
+	margin-top : 20px;
+	padding : 20px;
+	width : 300px;
+	height : 100px;
+	box-sizing : border-box;
+	background-color : antiquewhite;
+    }
+	</style>
+	
+
+
+</head>
+	
+<body>
+<h1>JavaScript 연습</h1>
+
+<input type = "text" placeholder="값입력" id="text">
+<input type = "button" value="확인" id="button1">
+<input type = "button" value="취소" id="button2">
+
+<div id="msg"><p id="p" style="text-align: center;"></p></div>
+
+<script>
+    const button1=document.getElementById('button1');
+    const text=document.getElementById('text');
+    const button2=document.getElementById('button2');
+    let p = document.getElementById('p');
+
+    button1.addEventListener('click',show)
+    function show()
+    {
+        p.textContent=text.value+"님 환영합니다.";
+    }
+
+    button2.addEventListener('click',function() {
+        p.textContent='';
+        text.value='';
+    })
+
+</script>
+</body>
+</html>
